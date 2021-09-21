@@ -1,6 +1,5 @@
 import * as React from "react";
-import * as Draft from "draft-js";
-import EditorState = Draft.EditorState
+import {EditorState} from "draft-js";
 
 interface HTitleProps {
     editorState: EditorState;

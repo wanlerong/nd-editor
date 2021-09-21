@@ -1,12 +1,12 @@
 {
   "name": "ndp-editor",
-  "version": "1.0.0",
+  "version": "0.0.1-alpha.1",
   "engines": {
     "node": ">=12.0.0"
   },
   "dependencies": {},
   "devDependencies": {
-    "@types/draft-js": "^0.11.5",
+    "@types/draft-js": "^0.10.45",
     "@types/react": "^17.0.22",
     "ts-loader": "^9.2.5",
     "typescript": "^4.4.3",
@@ -15,7 +15,8 @@
   },
   "peerDependencies": {
     "react": "^16.8.0",
-    "react-dom": "^16.8.0"
+    "react-dom": "^16.8.0",
+    "draft-js": "^0.10.1"
   },
   "main": "dist/bundle.js",
   "scripts": {

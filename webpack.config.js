@@ -34,6 +34,11 @@ module.exports = {
       "commonjs2": "react-dom",
       "amd": "react-dom",
       "root": "ReactDOM"
+    },
+    "draft-js": {
+      "commonjs": "draft-js",
+      "commonjs2": "draft-js",
+      "amd": "draft-js",
     }
   }
 }
