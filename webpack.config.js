@@ -18,7 +18,8 @@ module.exports = {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
     libraryTarget: "umd",
-    library: "nd-editor"
+    library: "ndp-editor",
+    globalObject: 'this'
   },
   externals: {
     // Use external version of React
