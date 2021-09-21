@@ -1,5 +1,5 @@
 {
-  "name": "nd-editor",
+  "name": "ndp-editor",
   "version": "1.0.0",
   "engines": {
     "node": ">=12.0.0"
@@ -23,13 +23,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wanlerong/nd-editor.git"
+    "url": "git+https://github.com/wanlerong/ndp-editor.git"
   },
   "author": "wanlerong",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/wanlerong/nd-editor/issues"
+    "url": "https://github.com/wanlerong/ndp-editor/issues"
   },
-  "homepage": "https://github.com/wanlerong/nd-editor#readme",
+  "homepage": "https://github.com/wanlerong/ndp-editor#readme",
   "description": ""
 }
