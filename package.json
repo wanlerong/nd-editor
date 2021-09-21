@@ -20,5 +20,16 @@
   "main": "dist/bundle.js",
   "scripts": {
     "build": "webpack"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wanlerong/nd-editor.git"
+  },
+  "author": "wanlerong",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wanlerong/nd-editor/issues"
+  },
+  "homepage": "https://github.com/wanlerong/nd-editor#readme",
+  "description": ""
 }
