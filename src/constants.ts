@@ -1,4 +1,6 @@
 // Custom overrides for "code" style.
+import {ContentBlock} from "draft-js";
+
 export const styleMap = {
     CODE: {
         backgroundColor: 'rgba(0, 0, 0, 0.05)',
@@ -12,5 +14,34 @@ export const styleMap = {
         color: "#c7254e",
         backgroundColor: "#f9f2f4",
         borderRadius: "4px",
+    }
+}
+
+export const blockStyleFn = (block: ContentBlock) => {
+    switch (block.getType()) {
+        case 'blockquote':
+            return 'RichEditor-blockquote';
+        default:
+            return null;
+    }
+}
+
+export const blockStyleViewFn = (block: ContentBlock) => {
+    switch (block.getData().get('diffType')) {
+        case "deletion":
+            return 'deletion';
+        case "newtion":
+            return 'newtion';
+        case "modifion":
+            return 'modifion';
+        default:
+            break;
+    }
+
+    switch (block.getType()) {
+        case 'blockquote':
+            return 'RichEditor-blockquote';
+        default:
+            return null;
     }
 }
