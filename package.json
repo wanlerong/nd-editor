@@ -1,21 +1,26 @@
 {
   "name": "ndp-editor",
-  "version": "0.0.1-alpha.5",
+  "version": "0.0.1-alpha.10",
   "engines": {
     "node": ">=12.0.0"
   },
   "dependencies": {},
   "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.15.6",
+    "@babel/preset-react": "^7.14.5",
+    "@mui/material": "^5.0.2",
     "@types/draft-js": "^0.10.45",
     "@types/react": "^17.0.22",
+    "babel-loader": "^8.2.2",
     "ts-loader": "^9.2.5",
     "typescript": "^4.4.3",
     "webpack": "^5.53.0",
     "webpack-cli": "^4.8.0"
   },
   "peerDependencies": {
-    "react": "^16.8.0",
-    "react-dom": "^16.8.0",
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0",
     "draft-js": ">=0.10.1"
   },
   "main": "dist/bundle.js",

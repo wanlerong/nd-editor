@@ -9,6 +9,11 @@ module.exports = {
         use: 'ts-loader',
         exclude: /node_modules/,
       },
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: 'babel-loader'
+      }
     ],
   },
   resolve: {
@@ -21,24 +26,27 @@ module.exports = {
     library: "ndp-editor",
     globalObject: 'this'
   },
-  externals: {
-    // Use external version of React
-    "react": {
-      "commonjs": "react",
-      "commonjs2": "react",
-      "amd": "react",
-      "root": "React"
+  externals: [
+    {
+      // Use external version of React
+      "react": {
+        "commonjs": "react",
+        "commonjs2": "react",
+        "amd": "react",
+        "root": "React"
+      },
+      "react-dom": {
+        "commonjs": "react-dom",
+        "commonjs2": "react-dom",
+        "amd": "react-dom",
+        "root": "ReactDOM"
+      },
+      "draft-js": {
+        "commonjs": "draft-js",
+        "commonjs2": "draft-js",
+        "amd": "draft-js",
+      }
     },
-    "react-dom": {
-      "commonjs": "react-dom",
-      "commonjs2": "react-dom",
-      "amd": "react-dom",
-      "root": "ReactDOM"
-    },
-    "draft-js": {
-      "commonjs": "draft-js",
-      "commonjs2": "draft-js",
-      "amd": "draft-js",
-    }
-  }
+    /@mui\/material\/.*/,
+  ]
 }
