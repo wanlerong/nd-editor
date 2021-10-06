@@ -45,7 +45,22 @@ module.exports = {
         "commonjs": "draft-js",
         "commonjs2": "draft-js",
         "amd": "draft-js",
-      }
+      },
+      "immutable": {
+        "commonjs": "immutable",
+        "commonjs2": "immutable",
+        "amd": "immutable",
+      },
+      "prismjs": {
+        "commonjs": "prismjs",
+        "commonjs2": "prismjs",
+        "amd": "prismjs",
+      },
+      "katex": {
+        "commonjs": "katex",
+        "commonjs2": "katex",
+        "amd": "katex",
+      },
     },
     /@mui\/material\/.*/,
   ]

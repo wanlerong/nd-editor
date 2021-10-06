@@ -1,4 +1,4 @@
-import {ContentBlock} from "draft-js";
+import {CompositeDecorator, ContentBlock} from "draft-js";
 import * as Immutable from 'immutable';
 
 declare namespace NdpEditor {
@@ -17,6 +17,8 @@ declare namespace NdpEditor {
     function Code(prop: CodeProps): JSX.Element;
 
     function Info(prop: InfoProps): JSX.Element;
+
+    function getCompositeDecorator(config: any): CompositeDecorator
 
   }
 }
