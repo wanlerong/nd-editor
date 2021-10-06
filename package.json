@@ -1,6 +1,6 @@
 {
   "name": "ndp-editor",
-  "version": "0.0.1-alpha.3",
+  "version": "0.0.1-alpha.5",
   "engines": {
     "node": ">=12.0.0"
   },
@@ -16,11 +16,12 @@
   "peerDependencies": {
     "react": "^16.8.0",
     "react-dom": "^16.8.0",
-    "draft-js": "^0.10.1"
+    "draft-js": ">=0.10.1"
   },
   "main": "dist/bundle.js",
+  "types": "src/main.d.ts",
   "scripts": {
-    "build": "webpack"
+    "build": "NODE_ENV=production webpack"
   },
   "repository": {
     "type": "git",
