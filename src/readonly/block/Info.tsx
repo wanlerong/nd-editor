@@ -5,7 +5,7 @@ import {EditorState} from "draft-js";
 export interface InfoProps {
   children?: React.ReactNode;
   editorState: EditorState;
-  'data-offset-key': string
+  'data-offset-key'?: string
 }
 
 export default function Info(props: InfoProps) {

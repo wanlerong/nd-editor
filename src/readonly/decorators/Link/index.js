@@ -24,7 +24,7 @@ function getLinkComponent(config) {
       const {children, entityKey, contentState} = this.props;
       let src = getSrcFromEntity(contentState.getEntity(entityKey).getData());
       return (
-        <a href={src} style={{zIndex: 10}} target="__blank">{children}</a>
+        <a href={src} style={{zIndex: 10, color: "#108ee9"}} target="__blank">{children}</a>
       );
     }
   };

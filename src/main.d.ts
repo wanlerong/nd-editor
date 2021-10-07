@@ -20,6 +20,10 @@ declare namespace NdpEditor {
 
     function getCompositeDecorator(config: any): CompositeDecorator
 
+    function getBlockRenderFunc(config: any): (block: ContentBlock) => any
+
+    function ReadonlyCellEditor(prop: ReadonlyCellEditorProps): JSX.Element;
+
   }
 }
 
@@ -28,6 +32,7 @@ import Readonly = NdpEditor.Readonly
 
 import {CodeProps} from "./readonly/block/Code";
 import {InfoProps} from "./readonly/block/Info";
+import {ReadonlyCellEditorProps} from "./readonly/CellEditor";
 
 export {
   Constants,

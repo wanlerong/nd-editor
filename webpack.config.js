@@ -61,7 +61,17 @@ module.exports = {
         "commonjs2": "katex",
         "amd": "katex",
       },
+      "@emotion/styled": {
+        "commonjs": "@emotion/styled",
+        "commonjs2": "@emotion/styled",
+        "amd": "@emotion/styled",
+      },
+      "@emotion/react": {
+        "commonjs": "@emotion/react",
+        "commonjs2": "@emotion/react",
+        "amd": "@emotion/react",
+      }
     },
-    /@mui\/material\/.*/,
+    /@mui\/.*\/.*/,
   ]
 }
