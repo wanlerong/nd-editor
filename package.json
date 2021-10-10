@@ -1,12 +1,18 @@
 {
   "name": "ndp-editor",
-  "version": "0.0.1-alpha.20",
+  "version": "0.0.1-alpha.27",
   "engines": {
     "node": ">=12.0.0"
   },
   "dependencies": {
+    "antd": "^3.13.2",
+    "echarts": "^3.7.2",
+    "echarts-for-react": "^2.0.0",
     "katex": "^0.5.1",
-    "prismjs": "^1.25.0"
+    "prismjs": "^1.25.0",
+    "react-split-pane": "^0.1.92",
+    "showdown": "^1.9.1",
+    "video-react": "^0.14.1"
   },
   "devDependencies": {
     "@babel/core": "^7.15.5",

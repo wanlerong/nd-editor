@@ -1,3 +1,5 @@
+// todo import 导致文件太大 https://webpack.js.org/guides/code-splitting/
+
 import 'prismjs';
 import 'prismjs/components/prism-bash';
 import 'prismjs/components/prism-javascript';

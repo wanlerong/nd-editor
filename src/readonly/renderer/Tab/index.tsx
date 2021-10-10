@@ -23,6 +23,7 @@ function MyTab(props: Props) {
   if (!list.length) {
     return null;
   }
+  const blockKey = block.getKey()
 
   return (
     <Box sx={{width: '100%'}}>
@@ -30,7 +31,7 @@ function MyTab(props: Props) {
         <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
           {list.map((item: any, index: any) => {
             return (
-              <Tab label={item.title} {...a11yProps(index)} />
+              <Tab label={item.title} {...a11yProps(blockKey, index)} />
             )
           })}
         </Tabs>
@@ -44,7 +45,7 @@ function MyTab(props: Props) {
           editorState = EditorState.createWithContent(convertFromRaw(raw));
         }
         return (
-          <TabPanel value={value} index={index}>
+          <TabPanel value={value} index={index} blockKey={blockKey}>
             <ReadonlyCellEditor editorState={editorState}/>
           </TabPanel>
         )
@@ -56,13 +57,13 @@ function MyTab(props: Props) {
 export default MyTab
 
 function TabPanel(props: TabPanelProps) {
-  const {children, value, index, ...other} = props;
+  const {children, value, index, blockKey, ...other} = props;
   return (
     <div
       role="tabpanel"
       hidden={value !== index}
-      id={`simple-tabpanel-${index}`}
-      aria-labelledby={`simple-tab-${index}`}
+      id={`simple-tabpanel-${blockKey}-${index}`}
+      aria-labelledby={`simple-tab-${blockKey}-${index}`}
       {...other}
     >
       {value === index && (
@@ -74,10 +75,10 @@ function TabPanel(props: TabPanelProps) {
   );
 }
 
-function a11yProps(index: number) {
+function a11yProps(blockKey: string, index: number) {
   return {
-    id: `simple-tab-${index}`,
-    'aria-controls': `simple-tabpanel-${index}`,
+    id: `simple-tab-${blockKey}-${index}`,
+    'aria-controls': `simple-tabpanel-${blockKey}-${index}`,
   };
 }
 
@@ -85,4 +86,5 @@ interface TabPanelProps {
   children?: React.ReactNode;
   index: number;
   value: number;
+  blockKey: string;
 }

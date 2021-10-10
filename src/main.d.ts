@@ -24,6 +24,8 @@ declare namespace NdpEditor {
 
     function ReadonlyCellEditor(prop: ReadonlyCellEditorProps): JSX.Element;
 
+    function ReadonlyEditor(prop: ReadonlyEditorProps): JSX.Element;
+
   }
 }
 
@@ -33,6 +35,7 @@ import Readonly = NdpEditor.Readonly
 import {CodeProps} from "./readonly/block/Code";
 import {InfoProps} from "./readonly/block/Info";
 import {ReadonlyCellEditorProps} from "./readonly/CellEditor";
+import {ReadonlyEditorProps} from "./readonly/Editor";
 
 export {
   Constants,

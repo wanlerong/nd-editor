@@ -51,6 +51,16 @@ module.exports = {
         "commonjs2": "immutable",
         "amd": "immutable",
       },
+      "@emotion/styled": {
+        "commonjs": "@emotion/styled",
+        "commonjs2": "@emotion/styled",
+        "amd": "@emotion/styled",
+      },
+      "@emotion/react": {
+        "commonjs": "@emotion/react",
+        "commonjs2": "@emotion/react",
+        "amd": "@emotion/react",
+      },
       "prismjs": {
         "commonjs": "prismjs",
         "commonjs2": "prismjs",
@@ -61,15 +71,25 @@ module.exports = {
         "commonjs2": "katex",
         "amd": "katex",
       },
-      "@emotion/styled": {
-        "commonjs": "@emotion/styled",
-        "commonjs2": "@emotion/styled",
-        "amd": "@emotion/styled",
+      "video-react": {
+        "commonjs": "video-react",
+        "commonjs2": "video-react",
+        "amd": "video-react",
       },
-      "@emotion/react": {
-        "commonjs": "@emotion/react",
-        "commonjs2": "@emotion/react",
-        "amd": "@emotion/react",
+      "showdown": {
+        "commonjs": "showdown",
+        "commonjs2": "showdown",
+        "amd": "showdown",
+      },
+      "react-split-pane": {
+        "commonjs": "react-split-pane",
+        "commonjs2": "react-split-pane",
+        "amd": "react-split-pane",
+      },
+      "antd": {
+        "commonjs": "antd",
+        "commonjs2": "antd",
+        "amd": "antd",
       }
     },
     /@mui\/.*\/.*/,
