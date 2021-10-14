@@ -7,7 +7,9 @@ class Graph extends Component {
   }
 
   resize() {
-    iFrameResize({log: false}, '.iframeND');
+    setTimeout(() => {
+      iFrameResize({log: false}, '.iframeND');
+    }, 500)
   }
 
   render() {

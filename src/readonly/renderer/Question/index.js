@@ -48,7 +48,7 @@ function MyQuestion(props) {
   return (
     <Box sx={{width: '100%'}}>
       <Box sx={{borderBottom: 1, borderColor: 'divider'}}>
-        <h4 style={{width: "670px", marginBottom: "0px"}}>
+        <h4 style={{marginBottom: "0px"}}>
           {chipLabel &&
           <Chip label={chipLabel} variant="outlined"/>
           }

@@ -17,12 +17,11 @@ class MyChart extends Component {
     const {block, contentState} = this.props;
     const entity = contentState.getEntity(block.getEntityAt(0));
     const {config} = entity.getData();
-
     return (
-      <div>
+      <div style={{width: "99%"}}>
         <ReactEchartsCore
           echarts={echarts}
-          style={{height: '300px', width: "auto"}}
+          style={{height: '300px'}}
           option={config}
           notMerge={true}
           lazyUpdate={true}
