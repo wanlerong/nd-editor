@@ -3,13 +3,6 @@ import React, {Component} from 'react';
 class Graph extends Component {
   constructor(props) {
     super(props);
-    this.resize = this.resize.bind(this);
-  }
-
-  resize() {
-    setTimeout(() => {
-      iFrameResize({log: false}, '.iframeND');
-    }, 500)
   }
 
   render() {
@@ -21,7 +14,7 @@ class Graph extends Component {
     return (
       <div>
         <iframe className="iframeND" src={src} frameBorder="0" allowFullScreen
-                onLoad={this.resize} style={{width: "100%"}}/>
+                style={{width: "100%", minHeight: "400px"}}/>
       </div>
     );
   }
