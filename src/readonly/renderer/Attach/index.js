@@ -27,7 +27,8 @@ class Attach extends Component {
     }
     const entity = contentState.getEntity(block.getEntityAt(0));
     const {src, name} = entity.getData();
-    let newHerf = src + "?attname=" + encodeURIComponent(name);
+    let theSrc = src.replace('http://','https://');
+    let newHerf = theSrc + "?attname=" + encodeURIComponent(name);
     let downloadFunc = async () => {
       await this.setState({aHref: newHerf});
       await this.fileLinkElement.click();

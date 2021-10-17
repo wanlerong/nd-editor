@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import NoSsr from '@mui/material/NoSsr';
 
 class Graph extends Component {
   constructor(props) {
@@ -12,10 +13,10 @@ class Graph extends Component {
     let src = "https://diagram.notedeep.com/viewer.html?id=" + id;
 
     return (
-      <div>
+      <NoSsr>
         <iframe className="iframeND" src={src} frameBorder="0" allowFullScreen
                 style={{width: "100%", minHeight: "400px"}}/>
-      </div>
+      </NoSsr>
     );
   }
 }
