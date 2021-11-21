@@ -1,6 +1,6 @@
 {
   "name": "ndp-editor",
-  "version": "0.0.1-alpha.32",
+  "version": "0.0.1-alpha.35",
   "engines": {
     "node": ">=12.0.0"
   },

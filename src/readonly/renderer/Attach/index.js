@@ -18,16 +18,17 @@ class Attach extends Component {
     };
   }
 
-  download = (e) => {
+  download = async (e) => {
     const {block, contentState, blockProps} = this.props;
     if (blockProps.beforeDownload) {
-      if (!blockProps.beforeDownload()) {
+      let canDownload = await blockProps.beforeDownload()
+      if (!canDownload) {
         return
       }
     }
     const entity = contentState.getEntity(block.getEntityAt(0));
     const {src, name} = entity.getData();
-    let theSrc = src.replace('http://','https://');
+    let theSrc = src.replace('http://', 'https://');
     let newHerf = theSrc + "?attname=" + encodeURIComponent(name);
     let downloadFunc = async () => {
       await this.setState({aHref: newHerf});
