@@ -26,6 +26,7 @@ declare namespace NdpEditor {
 
     function ReadonlyEditor(prop: ReadonlyEditorProps): JSX.Element;
 
+    function ViewImageModal(prop: ViewImageModalProps): JSX.Element;
   }
 }
 
@@ -36,6 +37,7 @@ import {CodeProps} from "./readonly/block/Code";
 import {InfoProps} from "./readonly/block/Info";
 import {ReadonlyCellEditorProps} from "./readonly/CellEditor";
 import {ReadonlyEditorProps} from "./readonly/Editor";
+import {ViewImageModalProps} from "./readonly/renderer/Image/ViewModal";
 
 export {
   Constants,

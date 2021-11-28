@@ -5,6 +5,7 @@ import getCompositeDecorator from "./decorators/getComDecorator";
 import getBlockRenderFunc from "./renderer/readonlyIndex";
 import ReadonlyCellEditor from "./CellEditor";
 import ReadonlyEditor from "./Editor";
+import ViewImageModal from "./renderer/Image/ViewModal";
 
 export {
   Code,
@@ -14,4 +15,5 @@ export {
   getBlockRenderFunc,
   ReadonlyCellEditor,
   ReadonlyEditor,
+  ViewImageModal
 }
